@@ -37,6 +37,10 @@ text = "Open Peer to Peer Host"
 layout_mode = 2
 text = "Open Lobby Server"
 
+[node name="OpenNorayLobbyServer" type="Button" parent="VBoxContainer" unique_id=1021996422]
+layout_mode = 2
+text = "Open Noray Lobby Server"
+
 [node name="Test" type="Button" parent="VBoxContainer" unique_id=979936759]
 visible = false
 layout_mode = 2
@@ -46,4 +50,5 @@ text = "Test"
 [connection signal="pressed" from="VBoxContainer/OpenClient" to="." method="_on_open_client_pressed"]
 [connection signal="pressed" from="VBoxContainer/OpenP2PHost" to="." method="_on_open_p_2p_host_pressed"]
 [connection signal="pressed" from="VBoxContainer/OpenLobbyServer" to="." method="_on_open_lobby_server_pressed"]
+[connection signal="pressed" from="VBoxContainer/OpenNorayLobbyServer" to="." method="_on_open_noray_lobby_server_pressed"]
 [connection signal="pressed" from="VBoxContainer/Test" to="." method="_on_test_pressed"]

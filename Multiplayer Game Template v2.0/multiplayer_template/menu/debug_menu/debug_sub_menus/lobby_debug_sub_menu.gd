@@ -3,7 +3,7 @@ extends SubMenu
 @export var start_end_button : Button
 
 func _ready():
-	Main.main.opening_mode.connect(_on_mode_changed)
+	Main.main.opened_mode.connect(_on_mode_changed)
 	
 	
 func _on_mode_changed(m : Mode) -> void: 

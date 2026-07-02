@@ -23,3 +23,7 @@ func _on_open_p_2p_host_pressed() -> void:
 func _on_open_lobby_server_pressed() -> void:
 	Main.open_mode(ServerLobbyMode.new())
 	holder.open_menu("server_lobby")
+
+
+func _on_open_noray_lobby_server_pressed() -> void:
+	Main.open_mode(NorayServerLobbyMode.new())
